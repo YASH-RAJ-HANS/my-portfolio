@@ -1,12 +1,11 @@
-import { BorderBeam } from "../@/components/magicui/border-beam";
+
 import { MagicCard } from "../@/components/magicui/magic-card";
 import NumberTicker from "../@/components/magicui/number-ticker";
-import ShineBorder from "../@/components/magicui/shine-border";
 const ProgressSection = () => {
   return (
     <div
       className={
-        "flex justify-around w-10/12 h-[500px] w-full flex-col gap-4 lg:h-[250px] lg:flex-row"
+        "flex justify-around py-40 w-10/12 min-h-[600px] w-full flex-col gap-4 lg:h-[250px] lg:flex-row bg-zinc-950 md:shadow-xl"
       }
     >
         
@@ -16,6 +15,9 @@ const ProgressSection = () => {
       >
         <p className="whitespace-pre-wrap text-4xl font-medium tracking-tighter text-black dark:text-white">
           <NumberTicker value={10} />
+        </p>
+        <p className="whitespace-pre-wrap text-4xl font-medium tracking-tighter text-black dark:text-white">
+          title
         </p>
       </MagicCard>
       
@@ -35,6 +37,7 @@ const ProgressSection = () => {
           <NumberTicker value={750} />
         </p>
       </MagicCard>
+      
     </div>
   );
 };
