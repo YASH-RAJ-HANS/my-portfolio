@@ -1,65 +1,134 @@
-import React from "react";
+import React, { useState } from "react";
+
 const data = [
   {
-    time: "1984",
-    title: "First Macintosh computer",
+    time: "July 2024 - Present",
+    title: "Full Stack Developer, Neugence Technology Pvt. Ltd.",
+    points: [
+      "Developed and maintained full-stack web applications using React.js, Node.js, and MongoDB.",
+      "Implemented Markdown file rendering to improve content management for the company website.",
+      "Collaborated with cross-functional teams to define, design, and ship new features.",
+      "Conducted code reviews and provided feedback to improve code quality.",
+    ],
     description:
-      "The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer...",
+      "Worked on dynamic .md file rendering for blogs, improving content management. Took part in defining, designing, and implementing business-critical features across the full stack, leading to enhanced scalability and user experience.",
     images: [
       "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
       "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
     ],
   },
   {
-    time: "1998",
-    title: "iMac",
+    time: "Mar 2024 - May 2024",
+    title: "Software Developer Intern, VibeSea (California, USA)",
+    points: [
+      "Developed a responsive UI for VibeSea's flagship app using Next.js.",
+      "Engineered scalable RESTful APIs using Node.js and Redis, improving performance by 40%.",
+      "Improved user engagement by 30% with enhanced UI.",
+      "Collaborated with the team to ship key features within tight deadlines.",
+    ],
     description:
-      "iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc...",
+      "Designed a modern, user-friendly interface using Next.js. Developed RESTful APIs that reduced response times by 40%. These efforts resulted in a significant increase in user engagement for the application.",
     images: [
       "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
       "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
     ],
   },
   {
-    time: "1998",
-    title: "iMac",
+    time: "Sept 2022 - Nov 2022",
+    title: "Software Engineer Intern, CrossTower India",
+    points: [
+      "Designed Client-side and Server-side architectures using React.js and Node.js.",
+      "Optimized the performance and scalability of web applications.",
+      "Collaborated with teams and product managers to develop software solutions.",
+      "Developed a course-selling platform by designing comprehensive schemas.",
+    ],
     description:
-      "iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc...",
+      "At CrossTower India, I contributed to designing and optimizing web architectures for client-server applications. Collaborated in developing a course-selling platform by efficiently structuring the database schemas.",
     images: [
       "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
       "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
     ],
   },
   {
-    time: "1998",
-    title: "iMac",
+    time: "May 2024",
+    title: "Rajasthan Police Hackathon 1.0 (2nd Runner-Up)",
+    points: [
+      "Built a crypto flow investigation tool using React.js, Node.js, and EtherScan API.",
+      "Enhanced data visualization with D3.js and Graph.js.",
+      "Provided a tool for investigating crypto transactions.",
+      "Collaborated with the Rajasthan Police to tailor the solution to real-world needs.",
+    ],
     description:
-      "iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc...",
+      "Developed a crypto flow investigation tool tailored to the needs of Rajasthan Police. The solution enabled visualization of crypto transaction flows using D3.js and Graph.js and was instrumental in securing the 2nd runner-up position in the hackathon.",
     images: [
       "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
       "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
     ],
   },
   {
-    time: "1998",
-    title: "iMac",
+    time: "Aug 2022",
+    title: "UPES Hackathon 3.0 (Top 25 Finalist)",
+    points: [
+      "Finished in the top 25 of the hackathon among 500+ participants.",
+      "Developed a full-stack web application using React.js, Node.js, and MongoDB.",
+      "Enhanced the user experience with interactive UI/UX designs.",
+      "Secured an internship at CrossTower India based on performance.",
+    ],
     description:
-      "iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc...",
+      "Participated in UPES Hackathon 3.0, where I built a robust full-stack web application with modern technologies like React.js and Node.js. This project led to a top 25 finish and an internship opportunity at CrossTower India.",
     images: [
       "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
       "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
     ],
   },
-  // Add more items as needed...
+  {
+    time: "May 2022",
+    title: "HackOver Flow 4.0 (2nd Runner-Up)",
+    points: [
+      "Developed an innovative solution to address real-world challenges.",
+      "Led a team to build a full-stack application using React.js and Node.js.",
+      "Enhanced application performance by optimizing front-end and back-end code.",
+      "Won the 2nd runner-up position, receiving a cash prize of 30K INR.",
+    ],
+    description:
+      "At HackOver Flow 4.0, I led a team to develop a full-stack web application, focusing on optimization and user experience. Our solution won 2nd place, resulting in a cash prize of 30K INR.",
+    images: [
+      "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
+      "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
+    ],
+  },
+  {
+    time: "Summer 2024",
+    title: "Summer of Bitcoin (Open Source Designer)",
+    points: [
+      "Selected as a designer for open-source web/mobile applications.",
+      "Contributed to designing responsive and user-friendly UIs.",
+      "Collaborated with global teams to improve design workflows.",
+      "Enhanced user interaction by implementing design suggestions.",
+    ],
+    description:
+      "As part of the Summer of Bitcoin, I contributed to the design of web and mobile applications for open-source projects. My contributions focused on improving UI/UX design and user interaction for a global audience.",
+    images: [
+      "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
+      "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
+    ],
+  }
+  
 ];
 
 const TimeLine = () => {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const toggleDescription = (index:any) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
   return (
     <div style={{ zIndex: 10 }} className="w-[70vw]">
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {data.map((item, index) => (
-          <li key={index}>
-            <div className="timeline-middle">
+          <li key={index} className="w-full">
+            <div className="timeline-middle flex flex-col justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -72,29 +141,48 @@ const TimeLine = () => {
                   clipRule="evenodd"
                 />
               </svg>
+              <div className="border-l-2 h-[20vw] mt-4"></div>
             </div>
 
             <div
-              className={`${
+              className={`w-full h-[40vh] rounded-md  p-4 pl-6 ${
                 index % 2 === 0 ? "timeline-start" : "timeline-end"
-              } mb-10 ${index % 2 === 0 ? "md:text-end" : ""}`}
+              } mb-10 ${index % 2 === 0 ? "md:text-en" : ""}`}
             >
               <time className="font-mono italic">{item.time}</time>
-              <div className="text-lg font-black ">{item.title}</div>
-              <p>{item.description}</p>
+              <div className="text-lg font-black">{item.title}</div>
+              <ul>
+                {item.points.map((point, pointIndex) => (
+                  <li key={pointIndex} className="list-disc">
+                    {point}
+                  </li>
+                ))}
+              </ul>
+              <button
+                onClick={() => toggleDescription(index)}
+                className="text-blue-500 underline mt-2"
+              >
+                {expandedIndex === index ? "Hide details" : "View details"}
+              </button>
+              {expandedIndex === index && (
+                <p className="mt-2">{item.description}</p>
+              )}
             </div>
 
-            <hr />
+            {/* <hr /> */}
 
             <div
-              className={`${
+              className={`w-full p-4 ${
                 index % 2 === 0 ? "timeline-end ml-4" : "timeline-start"
               } mb-10`}
             >
-              <div className="carousel carousel-center bg-neutral rounded-box max-w-md space-x-1 p-4 h-[40vh] w-[30vw] flex justify-around">
+              <div className="carousel carousel-center border-2  border-gray-700 bg-neutral rounded-box  space-x-1 p-4 h-[40vh] w-full flex justify-around">
                 {item.images.map((image, imgIndex) => (
                   <div className="carousel-item" key={imgIndex}>
-                    <img src={image} className="rounded-box w-[27vw] mr-2 hover:scale-[1.05]" />
+                    <img
+                      src={image}
+                      className="rounded-box w-[27vw] mr-2 "
+                    />
                   </div>
                 ))}
               </div>

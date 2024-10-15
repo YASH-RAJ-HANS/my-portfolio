@@ -9,7 +9,7 @@ export function RetroGridDemo() {
     <div className="pt-40 relative flex min-h-[100vh] w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-zinc-950 md:shadow-xl">
      
       {/* <ProgressSection/> */}
-      <div className=" text-4xl font-bold my-6 mb-10">TimeLine</div>
+      <div className=" text-4xl font-bold my-6 mb-10">Journey</div>
       <TimeLine/>
 
       <RetroGrid />

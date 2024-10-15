@@ -61,11 +61,11 @@ const Hero = () => {
           zIndex: 5,
          
         }}
-        className="absolute h-[90vh] w-full max-w-[30rem] flex flex-col bg-opacity-70 rounde-br-[20rem] rounded-tr-[20rem] justify-center overflow-hidden pt-8 top-20 -left-2 py-10 bg-zinc-950  px-10 border-2 border-purple-600"
+        className="absolute h-[100vh] w-full max-w-[30rem] flex flex-col bg-opacity-70 rounde-br-[20rem] rouned-tr-[20rem] justify-center overflow-hidden pt-8 top-16 -left-2 py-10 bg-zinc-950  px-10 border-r-2 border-white"
       >
         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
           <p className="text-[3.5rem] font-semibold opacity-100">
-            Magic UI<span className="text-[#5046e6]">.</span>
+            Magic yash raj UI<span className="text-[#5046e6]">.</span>
           </p>
         </BoxReveal>
 
@@ -73,6 +73,13 @@ const Hero = () => {
           <h2 className="mt-[.5rem] text-[1rem]">
             UI library for{" "}
             <span className="text-[#5046e6]">Design Engineers</span>
+            FAQ
+      skills
+      contact us
+
+      dsa
+      Blogs
+      Achievements 
           </h2>
         </BoxReveal>
 
@@ -115,7 +122,7 @@ const Hero = () => {
                 className={`absolute bottom-14 r w-[300px] h-[200px] bg-gradient-to-r from-purple-500 to-pink-500 shadow-2xl flex items-center  justify-center text-xl text-white font-semibold 
                     transition-transform duration-700 ease-in-out transform origin-center ${
                       isActive
-                        ? "z-20 scale-150 shadow-2xl border-[2px] border-white "
+                        ? "z-20 scale-150 shadow-2xl border-2 border-purple-600 "
                         : "z-10 scale-90 opacity-70"
                     }`}
                 style={{

@@ -21,8 +21,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={`w-full h-[10vh] fixed top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/30 backdrop-blur-md shadow-lg' : 'bg-black/50 backdrop-blur-md shadow-lg'}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className={`w-full h-[10vh] fixed top-0 z-50 transition-all duration-300 border-b-2 border-white ${isScrolled ? 'bg-black/30 backdrop-blur-md shadow-lg' : 'bg-black/50 backdrop-blur-md shadow-lg'}`}>
+      <div className="max-w-7xl mx-auto my-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 text-md">
@@ -32,13 +32,13 @@ const Navbar: React.FC = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
             <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-            <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">DSA</a>
+            <a href="/dsa" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">DSA</a>
             <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
             <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Journey</a>
             <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
             <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Achievements</a>
             <button className="bg-indigo-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-indigo-700">Get in Touch</button>
-            <button className="bg-indigo-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-indigo-700">Contact Us</button>
+            {/* <button className="bg-indigo-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-indigo-700">Contact Us</button> */}
           </div>
           
           {/* Mobile Menu Button */}
