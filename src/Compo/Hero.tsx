@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { cards } from "./Data";
 import BoxReveal from "../@/components/magicui/box-reveal";
+import Loader from "./Loader";
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -45,7 +46,7 @@ const Hero = () => {
       style={{
         position: "relative",
         overflow: "hidden",
-        opacity:"120%",
+        opacity: "120%",
         backgroundImage: `url(${cards[activeIndex].imageUrl})`,
         backgroundSize: "cover", // Ensure the entire image is visible
         backgroundPosition: "center",
@@ -59,13 +60,12 @@ const Hero = () => {
       <div
         style={{
           zIndex: 5,
-         
         }}
-        className="absolute h-[100vh] w-full max-w-[30rem] flex flex-col bg-opacity-70 rounde-br-[20rem] rouned-tr-[20rem] justify-center overflow-hidden pt-8 top-16 -left-2 py-10 bg-zinc-950  px-10 border-r-2 border-white"
+        className="absolute h-[100vh] w-full max-w-[30rem] flex flex-col bg-opacity-70 rounde-br-[20rem] rouned-tr-[20rem] justify-center overflow-hidden pt-8 top-16 -left-2 py-10 bg-zinc-950  px-10 borde-r-2 border-white"
       >
         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
           <p className="text-[3.5rem] font-semibold opacity-100">
-            Magic yash raj UI<span className="text-[#5046e6]">.</span>
+            YASH RAJ HANS<span className="text-[#5046e6]">.</span>
           </p>
         </BoxReveal>
 
@@ -73,13 +73,7 @@ const Hero = () => {
           <h2 className="mt-[.5rem] text-[1rem]">
             UI library for{" "}
             <span className="text-[#5046e6]">Design Engineers</span>
-            FAQ
-      skills
-      contact us
-
-      dsa
-      Blogs
-      Achievements 
+            FAQ skills contact us dsa Blogs Achievements
           </h2>
         </BoxReveal>
 
@@ -107,7 +101,12 @@ const Hero = () => {
         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
           <button className="mt-[1.6rem] bg-[#5046e6]">Explore</button>
         </BoxReveal>
+        
       </div>
+      <div className="absolute top-16 left-[30.4vw] z-[6]">
+        <Loader key={activeIndex} />
+      </div>
+     
 
       <div className=" flex items-center justify-between mx-auto ">
         <div className="absolute w-[40vw] bottom-0 right-0 h-[30vh]   px-4  ">
