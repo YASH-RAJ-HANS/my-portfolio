@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { cards } from "./Data";
-import BoxReveal from "../@/components/magicui/box-reveal";
-import Loader from "./Loader";
+import BoxReveal from "../../@/components/magicui/box-reveal";
+import Loader from "../Loader";
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -61,52 +61,56 @@ const Hero = () => {
         style={{
           zIndex: 5,
         }}
-        className="absolute h-[100vh] w-full max-w-[30rem] flex flex-col bg-opacity-70 rounde-br-[20rem] rouned-tr-[20rem] justify-center overflow-hidden pt-8 top-16 -left-2 py-10 bg-zinc-950  px-10 borde-r-2 border-white"
+        className="absolute h-[100vh] w-full max-w-[30vw] flex flex-col bg-opacity-70 justify-center overflow-hidden pt-8 top-16 py-10 bg-zinc-950 px-10 border-white"
       >
-        <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-          <p className="text-[3.5rem] font-semibold opacity-100">
-            YASH RAJ HANS<span className="text-[#5046e6]">.</span>
+        <BoxReveal  duration={2.0}>
+          <p className="text-5xl font-semibold opacity-100">
+            YASH RAJ <span className="text-[#5046e6]">HANS</span>
           </p>
         </BoxReveal>
 
-        <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+        <BoxReveal  duration={2.0}>
           <h2 className="mt-[.5rem] text-[1rem]">
-            UI library for{" "}
-            <span className="text-[#5046e6]">Design Engineers</span>
-            FAQ skills contact us dsa Blogs Achievements
+            Full Stack Developer 🚀 | Product Designer🔥 | MERN 💻 | React
+            Native 📱
+            <br />
+            Python and Flask 💻
           </h2>
         </BoxReveal>
 
-        <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+        <BoxReveal  duration={2.0}>
           <div className="mt-[1.5rem]">
             <p>
-              -&gt; 20+ free and open-source animated components built with
-              <span className="font-semibold text-[#5046e6]"> React</span>,
-              <span className="font-semibold text-[#5046e6]"> Typescript</span>,
+              
+              -&gt;Extensive experience in {" "}
+              <span className="font-semibold text-[#5046e6]">React</span>,{" "}
+              <span className="font-semibold text-[#5046e6]">Node.js</span>,{" "}
+              <span className="font-semibold text-[#5046e6]">MongoDB</span>, and{" "}
+              <span className="font-semibold text-[#5046e6]">Express</span>.{" "}
+              <br />
+              -&gt;Built projects with {" "}
               <span className="font-semibold text-[#5046e6]">
-                {" "}
-                Tailwind CSS
-              </span>
-              , and
-              <span className="font-semibold text-[#5046e6]">
-                {" "}
-                Framer Motion
-              </span>
-              . <br />
-              -&gt; 100% open-source, and customizable. <br />
+                TypeScript
+              </span>{" "}
+              and{" "}
+              <span className="font-semibold text-[#5046e6]">React Native</span>
+              .
+              <br />
+              
             </p>
           </div>
         </BoxReveal>
 
-        <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-          <button className="mt-[1.6rem] bg-[#5046e6]">Explore</button>
+        <BoxReveal  duration={2.0}>
+          <button className="mt-[1.6rem] p-4 py-2 rounded-lg bg-[#5046e6]">
+            Explore My Projects
+          </button>
         </BoxReveal>
-        
       </div>
-      <div className="absolute top-16 left-[30.4vw] z-[6]">
+
+      <div className="absolute top-16 left-[30vw] z-[6]">
         <Loader key={activeIndex} />
       </div>
-     
 
       <div className=" flex items-center justify-between mx-auto ">
         <div className="absolute w-[40vw] bottom-0 right-0 h-[30vh]   px-4  ">
@@ -144,7 +148,7 @@ const Hero = () => {
           })}
         </div>
 
-        <button
+        {/* <button
           className="z-[9] absolute left-10 bottom-10 px-6 py-3 text-lg text-white rounded-full shadow-lg focus:outline-none transition-transform duration-300"
           onClick={prevCard}
         >
@@ -155,7 +159,7 @@ const Hero = () => {
           onClick={nextCard}
         >
           Next {`>`}
-        </button>
+        </button> */}
       </div>
     </div>
   );

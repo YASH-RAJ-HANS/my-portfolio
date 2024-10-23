@@ -6,9 +6,9 @@ import Navbar from "./Compo/Navbar";
 import Footer from "./Compo/Footer";
 
 
-import Home from "./Pages/Home";
-import Dsa from "./Pages/Dsa";
-import ScapperTool from "./Pages/ScapperTool";
+import Home from "./Pages/Home/Home";
+import Dsa from "./Pages/Dsa/Dsa";
+import ScapperTool from "./Pages/ToolPage/ScapperTool";
 
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dsa" element={<Dsa />} />
-            <Route path="/scrapper" element={<ScapperTool/>} />
+            <Route path="/tool" element={<ScapperTool/>} />
           </Routes>
         </div>
         <Footer />

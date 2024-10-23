@@ -26,14 +26,15 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 text-md">
-            <h1 className="text-white text-lg font-bold">YASH RAJ HANS</h1>
+            {/* <img className='h-10 w-40' src="./Logo.png" alt="" /> */}
+            <h1 className="text-white text-3xl font-bold">YRH</h1>
           </div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
             <a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
             <a href="/dsa" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">DSA</a>
-            <a href="scrapper" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tool</a>
+            <a href="tool" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tool</a>
             <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
             <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Journey</a>
             <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>

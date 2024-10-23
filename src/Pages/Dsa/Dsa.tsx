@@ -1,9 +1,9 @@
 import React from 'react'
-import LinePlot from '../Compo/DsaChart'
-import TreeChart from '../Compo/DsaChart'
+import LinePlot from '../../Compo/DsaCompo/DsaChart'
+import TreeChart from '../../Compo/DsaCompo/DsaChart'
 
-import RatingGraph from '../Compo/DsaGraph.js'
-import GitHubProfile from '../Compo/GitHubProfile'
+import RatingGraph from '../../Compo/DsaCompo/DsaGraph.js'
+import GitHubProfile from '../../Compo/DsaCompo/GitHubProfile'
 
 const Dsa = () => {
   return (

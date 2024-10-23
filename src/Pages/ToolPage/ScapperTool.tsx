@@ -1,5 +1,5 @@
 import React from 'react'
-import UserDataScraper from '../Scrapper'
+import UserDataScraper from '../../Scrapper'
 
 const ScapperTool = () => {
   return (
