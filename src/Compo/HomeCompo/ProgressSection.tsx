@@ -33,16 +33,16 @@ const ProgressSection = () => {
       borderColor: "border-gray-500/20",
       color:"black"
     },
-    {
-      value: 5,
-      title: "Certifications 📜",
-      subtitle: "Google | AWS | Coursera",
-      gradientColor: "from-blue-800 to-blue-900",
-      tickerValue: 5,
-      emoji: "📜",
-      borderColor: "border-blue-500/20",
-      color:"blue"
-    },
+    // {
+    //   value: 5,
+    //   title: "Certifications 📜",
+    //   subtitle: "Google | AWS | Coursera",
+    //   gradientColor: "from-blue-800 to-blue-900",
+    //   tickerValue: 5,
+    //   emoji: "📜",
+    //   borderColor: "border-blue-500/20",
+    //   color:"blue"
+    // },
     
   ];
 
@@ -51,7 +51,7 @@ const ProgressSection = () => {
       {cardData.map((card, index) => (
         <MagicCard
           key={index}
-          className={`relative cursor-pointer bg-transparent backdrop-blur-2xl border-4 bg-gradient-to-br ${card.gradientColor} flex-col items-center justify-center shadow-2xl whitespace-nowrap text-4xl w-3/12 border ${card.borderColor} rounded-lg glass-card transition-all duration-300 hover:scale-110 rounded-[20px]`}
+          className={`relative cursor-pointer bg-transparent backdrop-blur-2xl border-4 bg-gradient-to-br ${card.gradientColor} flex-col items-center justify-center shadow-2xl whitespace-nowrap text-4xl w-4/12 border ${card.borderColor} rounded-lg glass-card transition-all duration-300 hover:scale-110 rounded-[20px]`}
           gradientColor={card.color}
         >
           <p className="whitespace-pre-wrap text-6xl font-bold tracking-tight text-white">

@@ -13,26 +13,26 @@ const data = [
     description:
       "Worked on dynamic .md file rendering for blogs, improving content management. Took part in defining, designing, and implementing business-critical features across the full stack, leading to enhanced scalability and user experience.",
     images: [
-      "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
-      "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
+      "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_f382bf90384d4888ba0cb059cefe8cb9_Screenshot_2024-10-23_213317.png",
+      "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_0bc41ddb28bb4cd0a064e119812e2800_Screenshot_2024-10-23_213442.png",
     ],
   },
-  {
-    time: "Mar 2024 - May 2024",
-    title: "Software Developer Intern, VibeSea (California, USA)",
-    points: [
-      "Developed a responsive UI for VibeSea's flagship app using Next.js.",
-      "Engineered scalable RESTful APIs using Node.js and Redis, improving performance by 40%.",
-      "Improved user engagement by 30% with enhanced UI.",
-      "Collaborated with the team to ship key features within tight deadlines.",
-    ],
-    description:
-      "Designed a modern, user-friendly interface using Next.js. Developed RESTful APIs that reduced response times by 40%. These efforts resulted in a significant increase in user engagement for the application.",
-    images: [
-      "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-      "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-    ],
-  },
+  // {
+  //   time: "Mar 2024 - May 2024",
+  //   title: "Software Developer Intern, VibeSea (California, USA)",
+  //   points: [
+  //     "Developed a responsive UI for VibeSea's flagship app using Next.js.",
+  //     "Engineered scalable RESTful APIs using Node.js and Redis, improving performance by 40%.",
+  //     "Improved user engagement by 30% with enhanced UI.",
+  //     "Collaborated with the team to ship key features within tight deadlines.",
+  //   ],
+  //   description:
+  //     "Designed a modern, user-friendly interface using Next.js. Developed RESTful APIs that reduced response times by 40%. These efforts resulted in a significant increase in user engagement for the application.",
+  //   images: [
+  //     "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
+  //     "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
+  //   ],
+  // },
   {
     time: "Sept 2022 - Nov 2022",
     title: "Software Engineer Intern, CrossTower India",

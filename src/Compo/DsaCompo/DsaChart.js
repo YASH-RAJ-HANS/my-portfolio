@@ -361,11 +361,7 @@ const flareData = {
                 { name: "TreeMapLayout", size: 9191 },
               ],
             },
-            { name: "Operator", size: 2490 },
-            { name: "OperatorList", size: 5248 },
-            { name: "OperatorSequence", size: 4190 },
-            { name: "OperatorSwitch", size: 2581 },
-            { name: "SortOperator", size: 2023 },
+            
           ],
         },
         { name: "Visualization", size: 16540 },
