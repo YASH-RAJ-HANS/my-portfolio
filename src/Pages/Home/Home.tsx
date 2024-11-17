@@ -41,18 +41,19 @@ const Home = () => {
         <RetroGridDemo />
       </section>
 
+   
       <section id="project">
         <div className=" flex items-center justify-center flex-col w-full z-[0] mt-12 mb-12">
           <div className="text-4xl font-bold my-12">My Projects</div>
           <Projects />
           <div className="my-6 text-xl border-2 p-2">More projects</div>
         </div>
-      </section>
+      </section> 
       <section id="achievements">
         <div className=" flex items-center justify-center flex-col w-full z-[0] mt-12 mb-12">
           <div className="text-4xl font-bold my-12">My Achievements</div>
           <Achievements />
-          <div className="my-6 text-xl border-2 p-2">More Achievements</div>
+          {/* <div className="my-6 text-xl border-2 p-2">More Achievements</div> */}
         </div>
       </section>
 

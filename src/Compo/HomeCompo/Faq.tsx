@@ -7,20 +7,44 @@ interface FAQ {
 
 const faqData: FAQ[] = [
   {
-    question: 'What is your background? cv add button nad resume',
-    answer: 'I have a background in software development with experience in full-stack development, focusing on web applications and contributing to open-source projects.',
+    question: 'What is your background and experience?',
+    answer: 'I have a background in software development with expertise in full-stack development and significant contributions to open-source projects.',
   },
   {
-    question: 'What technologies do you use? dsa tree and rank checker and add icon of github and youtube insta twitter buyme cup of coffee discord',
-    answer: 'I primarily work with JavaScript, TypeScript, React, Node.js, and various databases such as MongoDB and PostgreSQL.',
+    question: 'What are the technologies you specialize in?',
+    answer: 'I specialize in JavaScript, TypeScript, React, Node.js, and various backend frameworks like Flask and Spring Boot.',
   },
   {
-    question: 'How can I contact you?',
-    answer: 'You can contact me through the Contact Me section on my website or reach out via email at your-email@example.com.',
+    question: 'Can you tell me about your contributions to open-source projects?',
+    answer: 'I have contributed to Summer of Bitcoin and Snip Savvy projects, focusing on scalable solutions and innovative approaches.',
   },
   {
-    question: 'What are your hobbies?',
-    answer: 'In my free time, I enjoy coding, reading, and exploring new technologies, as well as participating in hackathons and tech meetups.',
+    question: 'What notable achievements have you made in hackathons or competitions?',
+    answer: 'I was the 2nd runner-up at HackOverflow 4.0 CU and Rajasthan Police Hackathon 1.0 in 2024.',
+  },
+  {
+    question: 'What are some key projects you have worked on?',
+    answer: 'Projects include a Speech-to-Speech AI chatbot, a text-to-audio AI model, and a nested file explorer with QR code functionality.',
+  },
+  {
+    question: 'What skills do you have in mobile and web app development?',
+    answer: 'I have skills in React Native for mobile apps, MERN stack for web apps, and modern UI/UX design principles.',
+  },
+  {
+    question: 'How can I access your CV or resume?',
+    answer: 'You can access my resume via the "Download CV" button in the Resume section on my portfolio.',
+  },
+  {
+    question: 'What are your preferred tools for development and deployment?',
+    answer: 'I use Docker, AWS, Vercel, Redis, and D3.js, among other modern tools for efficient development and deployment.',
+  },
+  {
+    question: 'How can I reach out to you for collaboration or queries?',
+    answer: 'You can reach me via email at your-email@example.com or through my Contact Me page.',
+  },
+  {
+    question: 'Do you have any social profiles or community links to share?',
+    answer: 'Yes, you can find me on GitHub, YouTube, Instagram, Twitter, Buy Me a Coffee, and Discord.',
   },
 ];
 
@@ -32,20 +56,27 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-6">
-      <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+    <div className="container mx-auto p-4 sm:p-6 md:p-8">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
+        Frequently Asked Questions
+      </h2>
       <div className="space-y-4">
         {faqData.map((faq, index) => (
-          <div key={index} className="border rounded-lg p-4">
+          <div
+            key={index}
+            className="border rounded-lg p-4 md:p-6 shadow-sm transition-all hover:shadow-md"
+          >
             <div
-              className="flex justify-between cursor-pointer"
+              className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleExpand(index)}
             >
-              <h3 className="text-xl font-semibold">{faq.question}</h3>
-              <span>{expandedIndex === index ? '-' : '+'}</span>
+              <h3 className="text-lg sm:text-xl font-semibold">{faq.question}</h3>
+              <span className="text-2xl">{expandedIndex === index ? '-' : '+'}</span>
             </div>
             {expandedIndex === index && (
-              <p className="mt-2 text-gray-700">{faq.answer}</p>
+              <p className="mt-2 text-gray-200 text-sm sm:text-base">
+                {faq.answer}
+              </p>
             )}
           </div>
         ))}

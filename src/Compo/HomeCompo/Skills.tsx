@@ -289,18 +289,19 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-10/12 grid grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-6 p-8">
-      {skillset.map((skill, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-md transition-transform hover:scale-105"
-        >
-          <div className="text-4xl mb-4 0">{skill.icon}</div>
-          <h3 className="text-xl font-semibold mb-2">{skill.name}</h3>
-          <p className="text-sm text-gray-400">{skill.description}</p>
-        </div>
-      ))}
+    <div className="w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 p-8">
+  {skillset.map((skill, index) => (
+    <div
+      key={index}
+      className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-md transition-transform hover:scale-105"
+    >
+      <div className="text-4xl mb-4">{skill.icon}</div>
+      <h3 className="text-xl font-semibold mb-2 text-white">{skill.name}</h3>
+      <p className="text-sm text-gray-400 text-center">{skill.description}</p>
     </div>
+  ))}
+</div>
+
   );
 };
 
