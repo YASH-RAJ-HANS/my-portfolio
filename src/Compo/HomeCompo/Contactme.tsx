@@ -41,15 +41,17 @@ const ContactMe: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto flex flex-col md:flex-row p-6 gap-8">
+    <>
+    
+    <div className="container mx-auto flex flex-col md:flex-row p-6 gap-8 w-[80vw] max-md:w-full justify-center items-center">
       {/* Left Section */}
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 h-full ">
         <img
           src="https://images.unsplash.com/photo-1620064916958-605375619af8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1493&q=80"
           alt="Profile"
-          className="rounded-2xl shadow-lg mb-6"
+          className="rounded-2xl shadow-lg mb-6 w-full h-full hover:opacity-85 hover:scale-95 transition-all duration-500 cursor-pointer hover:blur-[2px]  z-20"
         />
-        <div className="flex space-x-6 justify-center md:justify-start">
+        {/* <div className=" absolute top-40 left-20 flex space-x-6 justify-center md:justify-start z-10">
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">
             <FaGithub className="text-3xl text-gray-200 hover:text-gray-400 transition-colors" />
           </a>
@@ -59,7 +61,7 @@ const ContactMe: React.FC = () => {
           <a href="mailto:your-email@example.com">
             <FaEnvelope className="text-3xl text-gray-200 hover:text-gray-400 transition-colors" />
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Right Section */}
@@ -106,6 +108,7 @@ const ContactMe: React.FC = () => {
             Send Message
           </button>
         </form>
+        {/* <img src="./contactUs.png" alt="" className='w-[200px] h-[300px] absolute bottom-0 right-[-20px]'/> */}
       </div>
 
       {/* Modal */}
@@ -124,6 +127,7 @@ const ContactMe: React.FC = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 

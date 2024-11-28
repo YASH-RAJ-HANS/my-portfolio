@@ -12,14 +12,14 @@ const images = Array.from({ length: 9 }, (_, i) => {
 
 export function BlurFadeDemo() {
   return (
-    <div className="columns-2 gap-4 sm:columns-3 p-4">
+    <div className="columns-2 gap-4 sm:columns-3 p-4 w-[80vw] max-md:w-full">
       
       {images.map(({ url, text }, idx) => (
         
-        <div className="relative group" key={url}>
+        <div className="relative group rounded-[1rem] cursor-pointer" key={url}>
           <BlurFade delay={0.25 + idx * 0.05} inView>
             <img
-              className="mb-4 w-full h-auto rounded-lg object-cover transition-opacity duration-300 ease-in-out opacity-80 group-hover:opacity-100"
+              className="mb-4 w-full h-auto rounded-[1rem] object-cover transition-all  duration-500 ease-in-out opacity-100 group-hover:opacity-50 group-hover:scale-[0.97]"
               src={url}
               alt={`Random stock image ${idx + 1}`}
             />

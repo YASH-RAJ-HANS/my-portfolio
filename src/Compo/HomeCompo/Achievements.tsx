@@ -40,7 +40,7 @@ const Achievements: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-6 sm:px-6 md:py-8">
+    <div className="container mx-auto px-4 py-6 sm:px-6 md:py-8 w-[80vw] max-md:w-full">
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
         Achievements
       </h2>
@@ -48,11 +48,12 @@ const Achievements: React.FC = () => {
         {achievementsData.map((achievement, index) => (
           <div
             key={index}
-            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white border rounded-lg p-4 md:p-6 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg"
+            onClick={() => toggleExpand(index)}
+            className="bg-gradient-to-r from-gray-700 to-gray-950 text-white border rounded-[0.7rem] p-4 md:p-6 shadow-md transition-all duration-500 transform hover:scale-105 hover:shadow-lg cursor-pointer"
           >
             <div
               className="flex justify-between items-center cursor-pointer"
-              onClick={() => toggleExpand(index)}
+              
             >
               <h3 className="text-lg sm:text-xl font-semibold">
                 {achievement.title}

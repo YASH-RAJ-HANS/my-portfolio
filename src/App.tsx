@@ -13,7 +13,7 @@ import ScapperTool from "./Pages/ToolPage/ScapperTool";
 
 const App = () => {
   return (
-    <div className="text-white flex flex-col text-green-700 justify-center items-center ">
+    <div className="text-white flex flex-col  justify-center items-center ">
       <Router>
         <Navbar />
         <div className="flex-grow ">
