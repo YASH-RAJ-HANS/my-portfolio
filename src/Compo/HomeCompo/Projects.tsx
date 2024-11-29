@@ -211,7 +211,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <div className="container mx-auto p-4 sm:p-6 w-full flex flex-col justify-center items-center">
+    <div className="container mx-auto p-4 sm:p-6 w-full flex flex-col justify-center items-center z-[10]">
       {/* Tab Section */}
       <div className="flex flex-wrap sm:flex-nowrap space-x-2 sm:space-x-4 mb-6 justify-center p-2 px-2 sm:px-4 bg-gray-800 rounded-lg items-center">
         {data.map((tab) => (

@@ -17,22 +17,6 @@ const data = [
       "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_0bc41ddb28bb4cd0a064e119812e2800_Screenshot_2024-10-23_213442.png",
     ],
   },
-  // {
-  //   time: "Mar 2024 - May 2024",
-  //   title: "Software Developer Intern, VibeSea (California, USA)",
-  //   points: [
-  //     "Developed a responsive UI for VibeSea's flagship app using Next.js.",
-  //     "Engineered scalable RESTful APIs using Node.js and Redis, improving performance by 40%.",
-  //     "Improved user engagement by 30% with enhanced UI.",
-  //     "Collaborated with the team to ship key features within tight deadlines.",
-  //   ],
-  //   description:
-  //     "Designed a modern, user-friendly interface using Next.js. Developed RESTful APIs that reduced response times by 40%. These efforts resulted in a significant increase in user engagement for the application.",
-  //   images: [
-  //     "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-  //     "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-  //   ],
-  // },
   {
     time: "Sept 2022 - Nov 2022",
     title: "Software Engineer Intern, CrossTower India",
@@ -44,10 +28,10 @@ const data = [
     ],
     description:
       "At CrossTower India, I contributed to designing and optimizing web architectures for client-server applications. Collaborated in developing a course-selling platform by efficiently structuring the database schemas.",
-    images: [
-      "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-      "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-    ],
+      images: [
+        "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_f382bf90384d4888ba0cb059cefe8cb9_Screenshot_2024-10-23_213317.png",
+        "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_0bc41ddb28bb4cd0a064e119812e2800_Screenshot_2024-10-23_213442.png",
+      ],
   },
   {
     time: "May 2024",
@@ -60,10 +44,10 @@ const data = [
     ],
     description:
       "Developed a crypto flow investigation tool tailored to the needs of Rajasthan Police. The solution enabled visualization of crypto transaction flows using D3.js and Graph.js and was instrumental in securing the 2nd runner-up position in the hackathon.",
-    images: [
-      "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-      "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-    ],
+      images: [
+        "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_f382bf90384d4888ba0cb059cefe8cb9_Screenshot_2024-10-23_213317.png",
+        "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_0bc41ddb28bb4cd0a064e119812e2800_Screenshot_2024-10-23_213442.png",
+      ],
   },
   {
     time: "Aug 2022",
@@ -76,10 +60,10 @@ const data = [
     ],
     description:
       "Participated in UPES Hackathon 3.0, where I built a robust full-stack web application with modern technologies like React.js and Node.js. This project led to a top 25 finish and an internship opportunity at CrossTower India.",
-    images: [
-      "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-      "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-    ],
+      images: [
+        "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_f382bf90384d4888ba0cb059cefe8cb9_Screenshot_2024-10-23_213317.png",
+        "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_0bc41ddb28bb4cd0a064e119812e2800_Screenshot_2024-10-23_213442.png",
+      ],
   },
   {
     time: "May 2022",
@@ -92,10 +76,10 @@ const data = [
     ],
     description:
       "At HackOver Flow 4.0, I led a team to develop a full-stack web application, focusing on optimization and user experience. Our solution won 2nd place, resulting in a cash prize of 30K INR.",
-    images: [
-      "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-      "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-    ],
+      images: [
+        "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_f382bf90384d4888ba0cb059cefe8cb9_Screenshot_2024-10-23_213317.png",
+        "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_0bc41ddb28bb4cd0a064e119812e2800_Screenshot_2024-10-23_213442.png",
+      ],
   },
   {
     time: "Summer 2024",
@@ -108,10 +92,10 @@ const data = [
     ],
     description:
       "As part of the Summer of Bitcoin, I contributed to the design of web and mobile applications for open-source projects. My contributions focused on improving UI/UX design and user interaction for a global audience.",
-    images: [
-      "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-      "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-    ],
+      images: [
+        "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_f382bf90384d4888ba0cb059cefe8cb9_Screenshot_2024-10-23_213317.png",
+        "https://del1.vultrobjects.com/blogs-images-and-videos/h1S-6Ftj/h1S-6Ftj_0bc41ddb28bb4cd0a064e119812e2800_Screenshot_2024-10-23_213442.png",
+      ],
   }
   
 ];
@@ -124,11 +108,11 @@ const TimeLine = () => {
   };
 
   return (
-    <div style={{ zIndex: 10 }} className="w-[70vw]">
+    <div style={{ zIndex: 10 }} className="w-[80vw] max-xl:w-[90vw] max-md:w-full">
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {data.map((item, index) => (
-          <li key={index} className="w-full">
-            <div className="timeline-middle flex flex-col justify-center items-center">
+          <li key={index} className="w-full mb-1 cursor-pointer">
+            <div className="timeline-middle flex flex-col justify-center items-center bg-in">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -141,26 +125,26 @@ const TimeLine = () => {
                   clipRule="evenodd"
                 />
               </svg>
-              <div className="border-l-2 h-[20vw] mt-4"></div>
+              <div className="border-l-2 min-h-[300px] mt-4 border-indigo-500"></div>
             </div>
 
             <div
-              className={`w-full h-[40vh] rounded-md  p-4 pl-6 ${
-                index % 2 === 0 ? "timeline-start" : "timeline-end"
+              className={`w-full min-h-[160px] lg:min-h-[370px] rounded-md  p-4 pl-6  ${
+                index % 2 === 0 ? "md:timeline-start timeline-end" : "timeline-end"
               } mb-10 ${index % 2 === 0 ? "md:text-en" : ""}`}
             >
-              <time className="font-mono italic">{item.time}</time>
-              <div className="text-lg font-black">{item.title}</div>
+              <time className="font-mono italic mb-2 text-indigo-300">{item.time}</time>
+              <div className="text-lg font-black mb-1 text-indigo-200 hover:scale-105 transition-all duration-500">{item.title}</div>
               <ul>
                 {item.points.map((point, pointIndex) => (
-                  <li key={pointIndex} className="list-disc">
+                  <li key={pointIndex} className="ml-6 list-disc mb-2 hover:scale-105 transition-all duration-500 text-justifys">
                     {point}
                   </li>
                 ))}
               </ul>
               <button
                 onClick={() => toggleDescription(index)}
-                className="text-blue-500 underline mt-2"
+                className="text-white bg-indigo-600 p-2 px-4 rounded-lg mt-2"
               >
                 {expandedIndex === index ? "Hide details" : "View details"}
               </button>
@@ -173,15 +157,15 @@ const TimeLine = () => {
 
             <div
               className={`w-full p-4 ${
-                index % 2 === 0 ? "timeline-end ml-4" : "timeline-start"
+                index % 2 === 0  ? "md:timeline-end ml-4 timeline-start" : "timeline-start"
               } mb-10`}
             >
-              <div className="carousel carousel-center border-2  border-gray-700 bg-neutral rounded-box  space-x-1 p-4 h-[40vh] w-full flex justify-around">
+              <div className="carousel carousel-center border-2  border-indigo-950 bg-neutral rounded-box  space-x-1 p-4 lg:h-[370px] h-[300px] w-full flex justify-around">
                 {item.images.map((image, imgIndex) => (
-                  <div className="carousel-item" key={imgIndex}>
+                  <div className="carousel-item  cursor-pointer w-full" key={imgIndex}>
                     <img
                       src={image}
-                      className="rounded-box w-[27vw] mr-2 "
+                      className="rounded-box w-[100%] min-w-[300px] mr-2 hover:scale-[1.02] transition-all duration-500 "
                     />
                   </div>
                 ))}

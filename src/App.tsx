@@ -16,7 +16,7 @@ const App = () => {
     <div className="text-white flex flex-col  justify-center items-center ">
       <Router>
         <Navbar />
-        <div className="flex-grow ">
+        <div className="flex-grow  w-[98vw]">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dsa" element={<Dsa />} />

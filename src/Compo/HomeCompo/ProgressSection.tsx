@@ -45,13 +45,26 @@ const ProgressSection = () => {
     // },
     
   ];
-
+  
   return (
-    <div className="flex justify-around py-40 w-10/12 min-h-[600px]  flex-col gap-8 lg:h-[300px] lg:flex-row bg-zinc-950 md:shadow-xl relative">
+    <div
+    
+    style={{
+      backgroundImage: `url(https:/media.istockphoto.com/id/1556878247/vector/line-highlight-brush-text-emphasis-underline-brush-on-chalkboard-background-hand-drawn.jpg?s=612x612&w=0&k=20&c=RFonlkeazWxFsrLKWf10xriYo5eGWM6Y6IT5qFjUYQ=)`,
+      backgroundSize: "contain",
+      backgroundPosition: "center",
+      backfaceVisibility: "revert",
+      // filter: "blur(1px)",
+      // opacity:0.6,
+      backdropFilter: "opacity(0.3)" ,
+     
+     
+    }}
+     className=" backdrop-blur-2xl flex flex-wrap justify-around py-40  gap-8  lg:flex-row md:shadow-xl relative w-[84vw] max-md:w-[100vw] px-2 backdrop-opacity-10	mb-80">
       {cardData.map((card, index) => (
         <MagicCard
           key={index}
-          className={`relative cursor-pointer bg-transparent backdrop-blur-2xl border-4 bg-gradient-to-br ${card.gradientColor} flex-col items-center justify-center shadow-2xl whitespace-nowrap text-4xl w-4/12 border ${card.borderColor} rounded-lg glass-card transition-all duration-300 hover:scale-110 rounded-[20px]`}
+          className={`relative cursor-pointer bg-transparent backdrop-blur-2xl border-4 bg-gradient-to-br ${card.gradientColor} flex-col items-center justify-center shadow-2xl whitespace-nowrap text-4xl  border ${card.borderColor} glass-card transition-all duration-300 hover:scale-110 rounded-[20px] min-h-[280px] min-w-[300px]  max-w-[350px]`}
           gradientColor={card.color}
         >
           <p className="whitespace-pre-wrap text-6xl font-bold tracking-tight text-white">

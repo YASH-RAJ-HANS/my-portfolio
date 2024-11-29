@@ -2,12 +2,13 @@ export const cards = [
     {
       id: "yash",
       imageUrl:
-        "https://media.istockphoto.com/id/2149530993/photo/digital-human-head-concept-for-ai-metaverse-and-facial-recognition-technology.webp?a=1&b=1&s=612x612&w=0&k=20&c=nyP4c-s5cSZy1nv1K0xn1ynC-Xuc1sY4Y29ZQqcrztA=",
+        "https://media.istockphoto.com/id/1347496689/vector/abstract-binary-background-for-hackathon-and-other-digital-events.jpg?s=612x612&w=0&k=20&c=I6XeoQ4Vh78wMWFzdcKcbrOM9WgiBNetYQgqO2eWr0s=",
     },
+    
     {
       id: 2,
       imageUrl:
-        "https://images.unsplash.com/photo-1725576415790-a5b4009a7952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
+        "https://media.istockphoto.com/id/629285904/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=YskpkpUYyGqsz8OMtMdGZaZUr3hlAIvtTcaHpTbGL4g=",
     },
     {
       id: 3,

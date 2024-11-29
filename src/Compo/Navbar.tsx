@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`w-full h-[10vh] fixed top-0 z-50 transition-all duration-300  border-gray-200 ${
+      className={`w-full h-[12vh] fixed top-0 z-50 transition-all duration-300  border-gray-200 p-4 max-lg:p-2 ${
         isScrolled
           ? "bg-black/30 backdrop-blur-md shadow-lg border-b-[2px]"
           : "border-b-[6px] bg-black/50 backdrop-blur-md shadow-lg"
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 items-center ">
+          <div className="hidden md:flex space-x-8 max-lg:space-x-4 items-center ">
             <div
               onClick={() => navigate(`/`)}
               className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer"

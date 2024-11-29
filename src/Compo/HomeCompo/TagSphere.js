@@ -62,7 +62,15 @@ const computeItemPosition = (index, textsLength, size) => {
   };
 };
 /* Text span element */
-const createTextItem = (text, name, index, textsLength, size, itemRef,description) => {
+const createTextItem = (
+  text,
+  name,
+  index,
+  textsLength,
+  size,
+  itemRef,
+  description
+) => {
   const transformOrigin = "50% 50%";
   const transform = "translate3d(-50%, -50%, 0) scale(1)";
   const styles = {
@@ -72,7 +80,7 @@ const createTextItem = (text, name, index, textsLength, size, itemRef,descriptio
     left: "50%",
     zIndex: index + 1,
     filter: "alpha(opacity:0)",
-    opacity: 0,
+    opacity: 100,
     WebkitTransformOrigin: transformOrigin,
     MozTransformOrigin: transformOrigin,
     OTransformOrigin: transformOrigin,
@@ -90,8 +98,7 @@ const createTextItem = (text, name, index, textsLength, size, itemRef,descriptio
       className={defaultConfig.itemClass}
       style={styles}
     >
-      <span className="text-2xl ">{text} </span>
-      
+      <span className="text-3xl hover:text-4xl max-md:text-2xl max-sm:text-2xl ">{text}<span className="opacity-0 hover:opacity-85"></span></span>
     </span>
   );
   return {
@@ -383,15 +390,15 @@ const texts = [
 ];
 const options = {
   radius: 200,
-  maxSpeed: 0.8,
+  maxSpeed: 1.2,
 };
 /* Main tag sphere element */
-const TagSphere = () => {
+const TagSphere = ({Size}) => {
   const containerRef = useRef(null);
   const config = { ...defaultConfig, ...options };
   const { radius, maxSpeed, initSpeed, direction } = config;
   const depth = 1 * radius; // rolling depth (defalt 2)
-  const size = 1.6 * radius; // rolling area size with mouse (default 1.5)
+  const size = 1.7 * radius; // rolling area size with mouse (default 1.5)
   // const keep = config.keep // whether to keep rolling after mouse out area
   // const paused = false // keep state to pause the animation
   const itemHooks = texts.map(() => createRef()); // create ref for each text item
@@ -492,9 +499,7 @@ const TagSphere = () => {
           texts.length,
           size,
           itemHooks[index],
-          text.description,
-
-
+          text.description
         )
       )
     );
@@ -507,20 +512,22 @@ const TagSphere = () => {
   }, [mouseX, mouseY, active, items, radius]);
 
   return (
-    <div
-      ref={containerRef}
-      className={config.containerClass}
-      onMouseOver={() => setActive(true)}
-      onMouseOut={() => setActive(false)}
-      // onMouseMove={(e) => handleMouseMove(e)}
-      style={{
-        position: "relative",
-        width: `${2 * radius}px`,
-        height: `${2 * radius}px`,
-        // backgroundColor:"black"
-      }}
-    >
-      {items.map((item) => item.el)}
+    <div className="w-full flex items-center justify-center cursor-pointer">
+      <div
+        ref={containerRef}
+        className={config.containerClass}
+        onMouseOver={() => setActive(true)}
+        onMouseOut={() => setActive(false)}
+        // onMouseMove={(e) => handleMouseMove(e)}
+        style={{
+          position: "relative",
+          width: `${1.5 * radius}px`,
+          height: `${1.5 * radius}px`,
+          // backgroundColor:"black"
+        }}
+      >
+        {items.map((item) => item.el)}
+      </div>
     </div>
   );
 };
