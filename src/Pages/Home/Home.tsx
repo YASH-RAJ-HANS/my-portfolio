@@ -54,12 +54,11 @@ const Home = () => {
 
   return (
     <>
-      {/* <div className="h-[100vh] text-white flex justify-center items-center w-full   overflow-hidden ">
+      <div className="h-[100vh] text-white flex justify-center items-center w-full   overflow-hidden ">
         <Hero />
-      </div> */}
+      </div>
 
-      {/* <Name /> */}
-
+      
       <section id="project">
         <div className="relative flex items-center justify-center flex-col w-full  mb-12 pt-40">
           <img
@@ -74,20 +73,22 @@ const Home = () => {
           <div className="my-6 text-xl border-2 p-2 z-[10]">More projects</div>
         </div>
       </section>
-      {/* <div className="relative flex items-center justify-center flex-col w-full z-[0]  mb-0">
-        <SocialLinks />
+      <Name />
+
+      <div className="relative flex items-center justify-center flex-col w-full z-[0]  mb-0">
+        {/* <SocialLinks /> */}
         <img
           src={Milestone}
           alt=""
           className="absolute top-0 opacity-50  w-full min-h-[300px]"
         />
-        <img
+        {/* <img
           src={MilestoneDown}
           alt=""
           className="absolute bottom-0 opacity-20  w-full min-h-[300px]"
-        />
+        /> */}
 
-        <div className="text-4xl font-bold mt-20 z-[10] ">MileStones</div>
+        <div className="text-4xl font-bold mt-40 z-[10] ">MileStones</div>
         <ProgressSection />
       </div>
       <div
@@ -178,7 +179,7 @@ const Home = () => {
         </div>
       </div>
       <FAQ />
-      <ContactMe /> */}
+      <ContactMe />
     </>
   );
 };

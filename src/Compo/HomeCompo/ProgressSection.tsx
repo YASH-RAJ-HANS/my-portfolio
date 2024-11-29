@@ -60,7 +60,7 @@ const ProgressSection = () => {
      
      
     }}
-     className=" backdrop-blur-2xl flex flex-wrap justify-around py-40  gap-8  lg:flex-row md:shadow-xl relative w-[84vw] max-md:w-[100vw] px-2 backdrop-opacity-10	mb-80">
+     className=" backdrop-blur-2xl flex flex-wrap justify-around py-40  gap-8  lg:flex-row md:shadow-xl relative w-[84vw] max-md:w-[100vw] px-2 backdrop-opacity-10	mb-20">
       {cardData.map((card, index) => (
         <MagicCard
           key={index}

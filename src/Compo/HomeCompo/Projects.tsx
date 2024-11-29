@@ -8,7 +8,8 @@ import {
   FaGithub,
   FaExternalLinkAlt,
 } from "react-icons/fa";
-
+import WaveFooter from "../../app/FooterWave.svg";
+import Pro from "../../app/Project.svg";
 interface Card {
   title: string;
   techStack: string[];
@@ -211,14 +212,14 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <div className="container mx-auto p-4 sm:p-6 w-full flex flex-col justify-center items-center z-[10]">
+    <div className="container mx-auto p-4 sm:p-6 w-[80vw] max-md:w-full flex flex-col justify-center items-center z-[10]">
       {/* Tab Section */}
-      <div className="flex flex-wrap sm:flex-nowrap space-x-2 sm:space-x-4 mb-6 justify-center p-2 px-2 sm:px-4 bg-gray-800 rounded-lg items-center">
+      <div className="flex flex-wrap  space-x-2 sm:space-x-4 mb-6 justify-center p-2 px-2 sm:px-4 bg-zinc-900 rounded-lg items-center ">
         {data.map((tab) => (
           <button
             key={tab.value}
             onClick={() => setActiveTab(tab.value)}
-            className={`py-2 px-3 sm:px-4 text-sm sm:text-base rounded-lg flex items-center ${
+            className={`py-2 px-3 sm:px-4 text-sm  rounded-[0.3rem] mb-2 flex items-center ${
               activeTab === tab.value
                 ? "bg-blue-600 text-white"
                 : "bg-gray-200 text-gray-800"
@@ -236,60 +237,92 @@ const Projects: React.FC = () => {
           ?.cards.map((card, index) => (
             <div
               key={index}
-              className="bg-white shadow-xl rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col h-[350px]"
+              className="group bg-gray-100 hover:bg-gray-900 shadow-xl border-b-4 overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col min-h-[370px] max-w-[340px]  rounded-[1rem] cursor-pointer relative"
             >
               {/* Image Section */}
               <img
                 src={card.image}
                 alt={card.title}
-                className="w-full h-[40%] object-cover"
+                className="w-full h-[50%] object-cover group-hover:scale-105 transition-all duration-500 "
               />
+              {/* <div
+                className="absolute opacity-0 group-hover:opacity-60 inset-0 bg-gradient-to-b from-transparent to-zinc-950"
+                style={{ zIndex: 5 }}
+              ></div> */}
 
               {/* Content Section */}
-              <div className="p-4 flex flex-col justify-between flex-1">
+              <div className="p-4 flex flex-col justify-between flex-1 z-[10]">
                 {/* Title */}
-                <h3 className="text-lg font-bold text-gray-800 mb-2">
+                <h3 className="text-xl font-bold text-gray-800  z-10 group-hover:text-gray-100">
                   {card.title}
                 </h3>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap mb-4">
+                <div className="flex flex-wrap mb-4 z-10">
                   {card.techStack.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="bg-gray-100 text-gray-800 py-1 px-3 rounded-full text-xs font-medium mr-2 mb-2 transition-colors duration-300 hover:bg-purple-600 hover:text-white"
+                      className=" text-gray-800 py-2 px-3 rounded-[0.4rem] text-xs font-medium mr-2 mb-2 transition-colors duration-300 bg-blue-600 text-white"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                {/* Description */}
-                <p className="text-gray-600 text-sm mb-4">
+                <p className="text-gray-800 group-hover:text-gray-100 text-sm mb-4  z-[10]">
                   {card.description.length > 100
                     ? `${card.description.substring(0, 100)}...`
                     : card.description}
                 </p>
 
+                <img
+                  src={WaveFooter}
+                  alt="Wave Footer"
+                  className="absolute bottom-0 left-0 group-hover:opacity-100 opacity-0"
+                />
+                <img
+                  src={Pro}
+                  alt="Wave Footer"
+                  className="absolute top-[50%] left-0 group-hover:opacity-100 opacity-0"
+                />
+
                 {/* Links */}
-                <div className="flex space-x-4">
+                <div className="group-hover:opacity-100 opacity-0 absolute top-4 right-4 flex flex-col space-y-4">
                   <a
                     href={card.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-gray-900 transition-colors"
+                    className="text-zinc-900 hover:text-gray-900 transition-colors  bg-white p-2 rounded-[2rem]"
                   >
-                    <FaGithub size={20} />
+                    <FaGithub size={24} />
                   </a>
                   <a
                     href={card.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-gray-900 transition-colors"
+                    className="text-zinc-900 hover:text-gray-900 transition-colors bg-white p-2 rounded-[2rem] "
                   >
-                    <FaExternalLinkAlt size={20} />
+                    <FaExternalLinkAlt size={24} />
                   </a>
                 </div>
+                {/* <div className="flex  space-x-4 z-[10]">
+                  <a
+                    href={card.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-zinc-900 hover:text-gray-900 transition-colors  bg-white p-2 rounded-[2rem]"
+                  >
+                    <FaGithub size={24} />
+                  </a>
+                  <a
+                    href={card.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-zinc-900 hover:text-gray-900 transition-colors bg-white p-2 rounded-[2rem] "
+                  >
+                    <FaExternalLinkAlt size={24} />
+                  </a>
+                </div> */}
               </div>
             </div>
           ))}
