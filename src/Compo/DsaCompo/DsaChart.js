@@ -401,8 +401,8 @@ const TreeChart = () => {
 
   return (
     <>
-    <div className="text-4xl mt-20 text-white mb-4">DSA ROADMAP</div>
-    <div className="w-[60vw] h-[70vh]  overflow-scroll bg-gray-800 pt-20 mb-20 custom-scroll">
+    <div className="text-4xl mt-24 text-white mb-4">DSA ROADMAP</div>
+    <div className="ml-20 w-[75vw] h-[80vh]  overflow-scroll bg-gray-800 pt-20 mb-20 custom-scroll">
       <svg
         ref={svgRef}
         width={1200}
