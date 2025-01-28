@@ -51,6 +51,18 @@ const Home = () => {
         "Get started with dozens of web components and interactive elements built on top of Tailwind CSS.",
     },
   ];
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [modalContent, setModalContent] = useState<string>("");
+
+  const handleModalOpen = (type:string) => {
+    setModalContent(type);
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+    setModalContent("");
+  };
 
   return (
     <>
@@ -151,7 +163,7 @@ const Home = () => {
             </ol>
           </div>
           <div className="w-4/12 max-lg:w-full p-4 flex items-center justify-center h-auto ">
-            <TagSphere Size={1.7} />
+            <TagSphere Size={1.2} />
           </div>
         </div>
         <div className="z-[10] p-4 text-4xl font-bold my-6 max-md:text-2xl mt-[10vh]">

@@ -275,7 +275,7 @@ const Projects: React.FC = () => {
                     : card.description}
                 </p>
 
-                <img
+                {/* <img
                   src={WaveFooter}
                   alt="Wave Footer"
                   className="absolute bottom-0 left-0 group-hover:opacity-100 opacity-0"
@@ -284,7 +284,7 @@ const Projects: React.FC = () => {
                   src={Pro}
                   alt="Wave Footer"
                   className="absolute top-[50%] left-0 group-hover:opacity-100 opacity-0"
-                />
+                /> */}
 
                 {/* Links */}
                 <div className="group-hover:opacity-100 opacity-0 absolute top-4 right-4 flex flex-col space-y-4">

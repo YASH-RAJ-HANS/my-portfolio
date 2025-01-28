@@ -13,7 +13,7 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="flex flex items-center space-x-4 ml-30">
+    <div className="flex flex-wrap mx-2 items-center space-x-4 ">
       {socialIcons.map((social, index) => (
         <a
           key={index}

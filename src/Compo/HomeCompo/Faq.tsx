@@ -61,11 +61,18 @@ const faqData: FAQ[] = [
 ];
 
 const FAQ: React.FC = () => {
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  // const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  const toggleExpand = (index: number) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
-  };
+  // const toggleExpand = (index: number) => {
+  //   setExpandedIndex(expandedIndex === index ? null : index);
+  // };
+  const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
+  
+    const toggleExpand = (index: number) => {
+      setExpandedIndices((prev) =>
+        prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+      );
+    };
 
   return (
     <div className="container mx-auto p-4 sm:p-6 md:p-8 w-[80vw] max-md:w-full">
@@ -75,24 +82,30 @@ const FAQ: React.FC = () => {
       <div className="space-y-4">
         {faqData.map((faq, index) => (
           <div
-            key={index}
-            onClick={() => toggleExpand(index)}
-            className="border rounded-[0.7rem] p-4 md:p-6 shadow-sm  hover:shadow-md cursor-pointer transition-all duration-500 transform hover:scale-105"
-          >
-            <div className="flex justify-between items-center cursor-pointer">
-              <h3 className="text-lg sm:text-xl font-semibold">
-                {faq.question}
-              </h3>
-              <span className="text-2xl">
-                {expandedIndex === index ? "-" : "+"}
-              </span>
-            </div>
-            {expandedIndex === index && (
-              <p className="mt-2 text-gray-200 text-sm sm:text-base">
-                {faq.answer}
-              </p>
-            )}
+          key={index}
+          onClick={() => toggleExpand(index)}
+          className={`border rounded-[0.7rem] p-4 md:p-6 shadow-sm hover:shadow-md cursor-pointer transition-all duration-700 transform hover:scale-[1.02] ${
+            expandedIndices.includes(index) ? 'bg-zinc-800/50' : ''
+          }`}
+        >
+          <div className="flex justify-between items-center">
+            <h3 className="text-lg sm:text-xl font-semibold">
+              {faq.question}
+            </h3>
+            <span className="text-2xl">
+              {expandedIndices.includes(index) ? '-' : '+'}
+            </span>
           </div>
+          <div
+            className={`transition-all duration-300 overflow-hidden ${
+              expandedIndices.includes(index) ? 'max-h-[1000px]' : 'max-h-0'
+            }`}
+          >
+            <p className="mt-2 text-sm sm:text-base text-gray-300 pl-6">
+              {}{faq.answer}
+            </p>
+          </div>
+        </div>
         ))}
       </div>
     </div>

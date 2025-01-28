@@ -330,7 +330,7 @@
 //     <div className="flex flex-col w-full items-center justify-center">
 //      <div className="w-10/12 p-4 text-2xl font-bold my-4 ">Tech Skills</div>
 //     <div className="w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-8 max-sm:w-full max-sm:gap-4 h-[70vh] overflow-y-auto custom-scroll bg-zinc-900">
-     
+
 //       {skillset.map((skill, index) => (
 //         <div
 //           key={index}
@@ -372,98 +372,478 @@ import {
   FaCss3,
   FaGit,
   FaHtml5,
+  FaWordpress,
+  FaPlug,
+  FaTrello,
+  FaDatabase,
+  FaGoogle,
+  FaFigma,
+  FaVuejs,
+  FaJava,
 } from "react-icons/fa";
-import Skillsvg from  "../../app/Skill.svg";
+import Skillsvg from "../../app/Skill.svg";
+import {
+  SiApachekafka,
+  SiChakraui,
+  SiContentful,
+  SiCypress,
+  SiEthereum,
+  SiExpress,
+  SiFlutter,
+  SiGrafana,
+  SiGraphql,
+  SiHuggingface,
+  SiJenkins,
+  SiJest,
+  SiKubernetes,
+  SiMongodb,
+  SiNestjs,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPostman,
+  SiPrometheus,
+  SiPuppeteer,
+  SiRedis,
+  SiRedux,
+  SiSolidity,
+  SiSpringboot,
+  SiStorybook,
+  SiSwagger,
+  SiTensorflow,
+  SiThreedotjs,
+  SiTypescript,
+  SiVercel,
+} from "react-icons/si";
 
 const Skills = () => {
   const [filter, setFilter] = useState("All");
   const [sortOption, setSortOption] = useState("None");
 
   const skillset = [
+    // ========== Languages ==========
     {
-      name: "React",
-      icon: <FaReact style={{ color: "#61DAFB" }} />,
-      size: "text-4xl",
-      description: "A JavaScript library for building user interfaces.",
-      type: "Technology",
+      name: "JavaScript",
+      icon: <FaJsSquare className="text-[#F7DF1E]" />,
+      description: "Core programming language for web development",
+      type: "Language",
       proficiency: "Expert",
-      experience: 3,
+      experience: 6,
     },
     {
-      name: "Node.js",
-      icon: <FaNode style={{ color: "#8CC84B" }} />,
-      size: "text-4xl",
-      description: "Server-side JavaScript runtime.",
-      type: "Technology",
-      proficiency: "Intermediate",
-      experience: 2,
-    },
-    {
-      name: "Python",
-      icon: <FaPython style={{ color: "#3776AB" }} />,
-      size: "text-4xl",
-      description: "High-level programming language for backend development.",
+      name: "TypeScript",
+      icon: <SiTypescript className="text-[#3178C6]" />,
+      description: "Typed superset of JavaScript",
       type: "Language",
       proficiency: "Advanced",
       experience: 4,
     },
     {
-      name: "AWS",
-      icon: <FaAws style={{ color: "#FF9900" }} />,
-      size: "text-4xl",
-      description: "Cloud platform for scalable application deployment.",
-      type: "Technology",
-      proficiency: "Intermediate",
-      experience: 2,
-    },
-    {
-      name: "GitHub",
-      icon: <FaGithub style={{ color: "#181717" }} />,
-      size: "text-4xl",
-      description: "Version control and collaboration platform.",
-      type: "Soft",
+      name: "Python",
+      icon: <FaPython className="text-[#3776AB]" />,
+      description: "General-purpose programming language",
+      type: "Language",
       proficiency: "Expert",
       experience: 5,
     },
     {
-      name: "HTML5",
-      icon: <FaHtml5 style={{ color: "#E34F26" }} />,
-      size: "text-4xl",
-      description: "Markup language for structuring web content.",
+      name: "Java",
+      icon: <FaJava className="text-[#007396]" />,
+      description: "Object-oriented programming language",
       type: "Language",
       proficiency: "Advanced",
+      experience: 4,
+    },
+
+    // ========== Frontend Technologies ==========
+    {
+      name: "React.js",
+      icon: <FaReact className="text-[#61DAFB]" />,
+      description: "Frontend component library",
+      type: "Frontend",
+      proficiency: "Expert",
       experience: 5,
     },
     {
-      name: "CSS3",
-      icon: <FaCss3 style={{ color: "#1572B6" }} />,
-      size: "text-4xl",
-      description: "Styling language for designing web pages.",
-      type: "Language",
+      name: "Next.js",
+      icon: <SiNextdotjs className="text-black dark:text-white" />,
+      description: "React framework for production",
+      type: "Frontend",
       proficiency: "Advanced",
+      experience: 3,
+    },
+    {
+      name: "Vue.js",
+      icon: <FaVuejs className="text-[#4FC08D]" />,
+      description: "Progressive JavaScript framework",
+      type: "Frontend",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+
+    // ========== Backend Technologies ==========
+    {
+      name: "Node.js",
+      icon: <FaNode className="text-[#8CC84B]" />,
+      description: "JavaScript runtime environment",
+      type: "Backend",
+      proficiency: "Expert",
       experience: 5,
     },
+    {
+      name: "Express.js",
+      icon: <SiExpress className="text-[#000000]" />,
+      description: "Node.js web framework",
+      type: "Backend",
+      proficiency: "Expert",
+      experience: 4,
+    },
+    {
+      name: "Spring Boot",
+      icon: <SiSpringboot className="text-[#6DB33F]" />,
+      description: "Java application framework",
+      type: "Backend",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+
+    // ========== Database ==========
+    {
+      name: "MongoDB",
+      icon: <SiMongodb className="text-[#47A248]" />,
+      description: "NoSQL document database",
+      type: "Database",
+      proficiency: "Advanced",
+      experience: 4,
+    },
+    {
+      name: "PostgreSQL",
+      icon: <SiPostgresql className="text-[#336791]" />,
+      description: "Relational database system",
+      type: "Database",
+      proficiency: "Expert",
+      experience: 5,
+    },
+    {
+      name: "Redis",
+      icon: <SiRedis className="text-[#DC382D]" />,
+      description: "In-memory data store",
+      type: "Database",
+      proficiency: "Intermediate",
+      experience: 3,
+    },
+
+    // ========== DevOps ==========
     {
       name: "Docker",
-      icon: <FaDocker style={{ color: "#2496ED" }} />,
-      size: "text-4xl",
-      description: "Containerization platform.",
+      icon: <FaDocker className="text-[#2496ED]" />,
+      description: "Containerization platform",
+      type: "DevOps",
+      proficiency: "Expert",
+      experience: 4,
+    },
+    {
+      name: "Kubernetes",
+      icon: <SiKubernetes className="text-[#326CE5]" />,
+      description: "Container orchestration system",
+      type: "DevOps",
+      proficiency: "Advanced",
+      experience: 3,
+    },
+    {
+      name: "Jenkins",
+      icon: <SiJenkins className="text-[#D24939]" />,
+      description: "Automation server",
+      type: "DevOps",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+
+    // ========== Web3 ==========
+    {
+      name: "Solidity",
+      icon: <SiSolidity className="text-[#363636]" />,
+      description: "Smart contract language",
+      type: "Web3",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+    {
+      name: "Ethereum",
+      icon: <SiEthereum className="text-[#3C3C3D]" />,
+      description: "Blockchain platform",
+      type: "Web3",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+    // {
+    //   name: "Hardhat",
+    //   icon: <SiHardhat className="text-[#FFF100]" />,
+    //   description: "Ethereum development environment",
+    //   type: "Web3",
+    //   proficiency: "Intermediate",
+    //   experience: 1
+    // },
+
+    // ========== Tools & Platforms ==========
+    {
+      name: "Vercel",
+      icon: <SiVercel className="text-black dark:text-white" />,
+      description: "Cloud platform for web deployment",
+      type: "Technology",
+      proficiency: "Expert",
+      experience: 3,
+    },
+    {
+      name: "Figma",
+      icon: <FaFigma className="text-[#F24E1E]" />,
+      description: "Collaborative design tool",
+      type: "Technology",
+      proficiency: "Advanced",
+      experience: 3,
+    },
+    // {
+    //   name: "Mouseflow",
+    //   icon: <SiMouseflow className="text-[#FF6D6D]" />,
+    //   description: "User analytics and session recording",
+    //   type: "Technology",
+    //   proficiency: "Intermediate",
+    //   experience: 2
+    // },
+
+    // ========== AI Tools ==========
+    {
+      name: "TensorFlow",
+      icon: <SiTensorflow className="text-[#FF6F00]" />,
+      description: "Machine learning framework",
       type: "Technology",
       proficiency: "Intermediate",
       experience: 2,
     },
     {
-      name: "Git",
-      icon: <FaGit style={{ color: "#F05032" }} />,
-      size: "text-4xl",
-      description: "Version control system.",
+      name: "Hugging Face",
+      icon: <SiHuggingface className="text-[#FFD21E]" />,
+      description: "AI model repository",
+      type: "Technology",
+      proficiency: "Intermediate",
+      experience: 1,
+    },
+
+    // ========== Cloud Technologies ==========
+    {
+      name: "AWS",
+      icon: <FaAws className="text-[#FF9900]" />,
+      description: "Cloud computing platform",
+      type: "DevOps",
+      proficiency: "Advanced",
+      experience: 3,
+    },
+    {
+      name: "Google Cloud",
+      icon: <FaGoogle className="text-[#4285F4]" />,
+      description: "Cloud services platform",
+      type: "DevOps",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+
+    // ========== State Management ==========
+    {
+      name: "Redux",
+      icon: <SiRedux className="text-[#764ABC]" />,
+      description: "State management library",
+      type: "Technology",
+      proficiency: "Expert",
+      experience: 4,
+    },
+    // {
+    //   name: "Zustand",
+    //   icon: <SiZustand className="text-[#764ABC]" />,
+    //   description: "State management solution",
+    //   type: "Technology",
+    //   proficiency: "Advanced",
+    //   experience: 2
+    // },
+
+    // ========== Testing ==========
+    {
+      name: "Jest",
+      icon: <SiJest className="text-[#C21325]" />,
+      description: "JavaScript testing framework",
       type: "Hard",
       proficiency: "Advanced",
       experience: 3,
     },
-    
+    {
+      name: "Cypress",
+      icon: <SiCypress className="text-[#17202C]" />,
+      description: "End-to-end testing framework",
+      type: "Hard",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+
+    // ========== Soft Skills ==========
+    {
+      name: "System Design",
+      icon: <FaDatabase className="text-[#007396]" />,
+      description: "Large-scale system architecture",
+      type: "Soft",
+      proficiency: "Advanced",
+      experience: 4,
+    },
+    {
+      name: "Agile Methodology",
+      icon: <FaTrello className="text-[#0079BF]" />,
+      description: "Project management framework",
+      type: "Soft",
+      proficiency: "Expert",
+      experience: 5,
+    },
+
+    // ========== Mobile Development ==========
+    {
+      name: "React Native",
+      icon: <FaReact className="text-[#61DAFB]" />,
+      description: "Cross-platform mobile framework",
+      type: "Technology",
+      proficiency: "Advanced",
+      experience: 3,
+    },
+    {
+      name: "Flutter",
+      icon: <SiFlutter className="text-[#02569B]" />,
+      description: "UI toolkit for native apps",
+      type: "Technology",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+
+    // ========== Additional Technologies ==========
+    {
+      name: "GraphQL",
+      icon: <SiGraphql className="text-[#E535AB]" />,
+      description: "API query language",
+      type: "Technology",
+      proficiency: "Advanced",
+      experience: 3,
+    },
+    {
+      name: "WebSocket",
+      icon: <FaPlug className="text-[#008080]" />,
+      description: "Real-time communication protocol",
+      type: "Technology",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+
+    // ========== CMS ==========
+    {
+      name: "WordPress",
+      icon: <FaWordpress className="text-[#21759B]" />,
+      description: "Content management system",
+      type: "Technology",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+    {
+      name: "Contentful",
+      icon: <SiContentful className="text-[#2478CC]" />,
+      description: "Headless CMS platform",
+      type: "Technology",
+      proficiency: "Intermediate",
+      experience: 1,
+    },
+
+    // ========== Monitoring ==========
+    {
+      name: "Prometheus",
+      icon: <SiPrometheus className="text-[#E6522C]" />,
+      description: "Systems monitoring toolkit",
+      type: "DevOps",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+    {
+      name: "Grafana",
+      icon: <SiGrafana className="text-[#F46800]" />,
+      description: "Analytics and monitoring platform",
+      type: "DevOps",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+
+    // ========== Additional Tools ==========
+    {
+      name: "Postman",
+      icon: <SiPostman className="text-[#FF6C37]" />,
+      description: "API development environment",
+      type: "Technology",
+      proficiency: "Expert",
+      experience: 4,
+    },
+    {
+      name: "Swagger",
+      icon: <SiSwagger className="text-[#85EA2D]" />,
+      description: "API documentation framework",
+      type: "Technology",
+      proficiency: "Advanced",
+      experience: 3,
+    },
+
+    // ========== Continued from above pattern ==========
+    // Add 40+ more skills following same structure...
+    // Example continued entries:
+
+    {
+      name: "NestJS",
+      icon: <SiNestjs className="text-[#E0234E]" />,
+      description: "Progressive Node.js framework",
+      type: "Backend",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+    {
+      name: "Kafka",
+      icon: <SiApachekafka className="text-[#231F20]" />,
+      description: "Distributed event streaming",
+      type: "Backend",
+      proficiency: "Intermediate",
+      experience: 1,
+    },
+    {
+      name: "Puppeteer",
+      icon: <SiPuppeteer className="text-[#40B5A4]" />,
+      description: "Headless browser automation",
+      type: "Hard",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
+    {
+      name: "Storybook",
+      icon: <SiStorybook className="text-[#FF4785]" />,
+      description: "UI component development",
+      type: "Frontend",
+      proficiency: "Advanced",
+      experience: 3,
+    },
+    {
+      name: "Chakra UI",
+      icon: <SiChakraui className="text-[#319795]" />,
+      description: "Modular component library",
+      type: "Frontend",
+      proficiency: "Expert",
+      experience: 3,
+    },
+    {
+      name: "Three.js",
+      icon: <SiThreedotjs className="text-[#049EF4]" />,
+      description: "3D graphics library",
+      type: "Frontend",
+      proficiency: "Intermediate",
+      experience: 2,
+    },
   ];
- const [skillType , setSkillType] = useState("All");
+  const [skillType, setSkillType] = useState("All");
   // Filter and Sort Logic
   const filteredSkills = skillset
     .filter((skill) => filter === "All" || skill.type === filter)
@@ -480,23 +860,23 @@ const Skills = () => {
   return (
     <div className="flex flex-col w-full items-center justify-center">
       <div className="w-10/12 p-4 text-2xl font-bold my-4">{filter} Skills</div>
-      
-      {/* Filter Buttons */}
-      <div className="w-10/12 flex flex-wrap justify-between mb-6">
-        <div className="flex gap-4">
+      <div className="w-10/12 flex flex-wrap items-center justify-between mb-6">
+        <div className="flex gap-2 mb-2  flex-wrap">
           {["All", "Technology", "Soft", "Hard", "Language"].map((type) => (
             <button
               key={type}
               onClick={() => setFilter(type)}
               className={`px-4 py-2 rounded-md ${
-                filter === type ? "bg-indigo-600 text-white" : "bg-gray-800 text-gray-300"
+                filter === type
+                  ? "bg-indigo-600 text-white"
+                  : "bg-gray-800 text-gray-300"
               } hover:bg-indigo-500 transition`}
             >
               {type}
             </button>
           ))}
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-2">
           <button
             onClick={() => setSortOption("Alphabetical")}
             className={`px-4 py-2 rounded-md ${
@@ -520,7 +900,6 @@ const Skills = () => {
         </div>
       </div>
 
-      {/* Skills Grid */}
       <div className="w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-8 max-lg:w-full max-sm:gap-4 h-[60vh] overflow-y-auto custom-scroll bg-zinc-950 relative rounded-lg">
         {filteredSkills.map((skill, index) => (
           <div
@@ -541,14 +920,20 @@ const Skills = () => {
             <p className="text-sm text-gray-200 text-center">
               {skill.description}
             </p>
-            <p className="text-xs text-gray-300 mt-2">Experience: {skill.experience} years</p>
+            <p className="text-xs text-gray-300 mt-2">
+              Experience: {skill.experience} years
+            </p>
           </div>
         ))}
-        <img src={Skillsvg} alt="" className="absolute top-0 opacity-80 max-sm:opacity-0 w-full"/>
-        {/* <div
-        className="absolute inset-0 bg-gradient-to-b from-transparent to-zinc-900"
-        style={{ zIndex: 0}}
-      ></div> */}
+        <img
+          src={Skillsvg}
+          alt=""
+          className="absolute top-0 opacity-80 max-sm:opacity-0 w-full"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-transparent to-zinc-900"
+          style={{ zIndex: 0 }}
+        ></div>
       </div>
     </div>
   );

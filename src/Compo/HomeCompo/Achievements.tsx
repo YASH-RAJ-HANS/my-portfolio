@@ -33,10 +33,12 @@ const achievementsData: Achievement[] = [
 ];
 
 const Achievements: React.FC = () => {
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
 
   const toggleExpand = (index: number) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
+    setExpandedIndices((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+    );
   };
 
   return (
@@ -49,22 +51,27 @@ const Achievements: React.FC = () => {
           <div
             key={index}
             onClick={() => toggleExpand(index)}
-            className="bg-gradient-to-r from-gray-700 to-gray-950 text-white border rounded-[0.7rem] p-4 md:p-6 shadow-md transition-all duration-500 transform hover:scale-105 hover:shadow-lg cursor-pointer"
+            className={`border rounded-[0.7rem] p-4 md:p-6 shadow-sm hover:shadow-md cursor-pointer transition-all duration-700 transform hover:scale-[1.02] ${
+              expandedIndices.includes(index) ? 'bg-zinc-800/50' : ''
+            }`}
           >
-            <div
-              className="flex justify-between items-center cursor-pointer"
-              
-            >
+            <div className="flex justify-between items-center">
               <h3 className="text-lg sm:text-xl font-semibold">
                 {achievement.title}
               </h3>
-              <span className="text-2xl">{expandedIndex === index ? '-' : '+'}</span>
+              <span className="text-2xl">
+                {expandedIndices.includes(index) ? '-' : '+'}
+              </span>
             </div>
-            {expandedIndex === index && (
-              <p className="mt-2 text-sm sm:text-base text-gray-200">
-                {achievement.description}
+            <div
+              className={`transition-all duration-300 overflow-hidden ${
+                expandedIndices.includes(index) ? 'max-h-[1000px]' : 'max-h-0'
+              }`}
+            >
+              <p className="mt-2 text-sm sm:text-base text-gray-300 pl-6">
+                {}{achievement.description}
               </p>
-            )}
+            </div>
           </div>
         ))}
       </div>
