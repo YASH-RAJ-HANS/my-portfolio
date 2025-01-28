@@ -1,0 +1,35 @@
+export const cards = [
+    {
+      id: "yash",
+      imageUrl:
+        "https://media.istockphoto.com/id/1347496689/vector/abstract-binary-background-for-hackathon-and-other-digital-events.jpg?s=612x612&w=0&k=20&c=I6XeoQ4Vh78wMWFzdcKcbrOM9WgiBNetYQgqO2eWr0s=",
+    },
+    
+    {
+      id: 2,
+      imageUrl:
+        "https://media.istockphoto.com/id/629285904/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=YskpkpUYyGqsz8OMtMdGZaZUr3hlAIvtTcaHpTbGL4g=",
+    },
+    {
+      id: 3,
+      imageUrl:
+        "https://plus.unsplash.com/premium_photo-1723874430570-cffc1006714b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHByb2dyYW1taW5nfGVufDB8fDJ8fHww",
+    },
+    {
+      id: 11,
+      imageUrl:
+        "https://media.istockphoto.com/id/1355632594/photo/high-tech-startup-concept-innovative-male-software-engineer-standing-doing-big-data-analysis.webp?a=1&b=1&s=612x612&w=0&k=20&c=h4FtvF5Dnj3kh-GHDX72J92shR6lxlHEHcGHibUYioI=",
+    },
+    {
+      id: 22,
+      imageUrl:
+        "https://media.istockphoto.com/id/1439425791/photo/digital-technology-software-development-concept-coding-programmer-working-on-laptop-with.webp?a=1&b=1&s=612x612&w=0&k=20&c=-ctzkAbBt2DW7nRs6AklVuvVHdRfKbIZ3kKEa8skRZk=",
+    },
+    {
+      id: 39,
+      imageUrl:
+        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2dyYW1taW5nfGVufDB8fDB8fHww",
+    },
+  ];
+  
+  
